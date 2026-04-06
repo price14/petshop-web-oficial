@@ -44,10 +44,12 @@ export default function Hero() {
         }}
       />
 
-      {/* Mobile overlay: full cover */}
+      {/* Mobile overlay: gradient — opaque top/bottom para texto, transparente en el centro */}
       <div
         className="absolute inset-0 lg:hidden"
-        style={{ background: 'rgba(254,252,247,0.92)' }}
+        style={{
+          background: 'linear-gradient(to bottom, rgba(254,252,247,0.92) 0%, rgba(254,252,247,0.55) 35%, rgba(254,252,247,0.55) 65%, rgba(254,252,247,0.97) 100%)',
+        }}
       />
 
       {/* Grain texture */}
